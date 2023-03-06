@@ -1,0 +1,4 @@
+# ninja log v5
+1	320	6998159835184663	CMakeFiles/PhysicalEngine.dir/main.cpp.obj	34b41a4de96ac899
+7	636	6998159838335967	CMakeFiles/PhysicalEngine.dir/src/glad.c.obj	d817776886795b86
+637	728	6998159839226347	PhysicalEngine.exe	d12a9d7d9a06a30d
