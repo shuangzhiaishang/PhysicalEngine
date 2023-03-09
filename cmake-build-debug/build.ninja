@@ -49,19 +49,19 @@ cmake_ninja_workdir = E$:/PhysicalEngine/cmake-build-debug/
 
 build cmake_object_order_depends_target_PhysicalEngine: phony || CMakeFiles/PhysicalEngine.dir
 
-build CMakeFiles/PhysicalEngine.dir/main.cpp.obj: CXX_COMPILER__PhysicalEngine_Debug E$:/PhysicalEngine/main.cpp || cmake_object_order_depends_target_PhysicalEngine
-  DEP_FILE = CMakeFiles\PhysicalEngine.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IE:/PhysicalEngine/include
-  OBJECT_DIR = CMakeFiles\PhysicalEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\PhysicalEngine.dir
-
 build CMakeFiles/PhysicalEngine.dir/src/glad.c.obj: C_COMPILER__PhysicalEngine_Debug E$:/PhysicalEngine/src/glad.c || cmake_object_order_depends_target_PhysicalEngine
   DEP_FILE = CMakeFiles\PhysicalEngine.dir\src\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IE:/PhysicalEngine/include
   OBJECT_DIR = CMakeFiles\PhysicalEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysicalEngine.dir\src
+
+build CMakeFiles/PhysicalEngine.dir/main.cpp.obj: CXX_COMPILER__PhysicalEngine_Debug E$:/PhysicalEngine/main.cpp || cmake_object_order_depends_target_PhysicalEngine
+  DEP_FILE = CMakeFiles\PhysicalEngine.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IE:/PhysicalEngine/include
+  OBJECT_DIR = CMakeFiles\PhysicalEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicalEngine.dir
 
 
 # =============================================================================
@@ -71,9 +71,9 @@ build CMakeFiles/PhysicalEngine.dir/src/glad.c.obj: C_COMPILER__PhysicalEngine_D
 #############################################
 # Link the executable PhysicalEngine.exe
 
-build PhysicalEngine.exe: CXX_EXECUTABLE_LINKER__PhysicalEngine_Debug CMakeFiles/PhysicalEngine.dir/main.cpp.obj CMakeFiles/PhysicalEngine.dir/src/glad.c.obj | E$:/PhysicalEngine/lib/glfw3.dll
+build PhysicalEngine.exe: CXX_EXECUTABLE_LINKER__PhysicalEngine_Debug CMakeFiles/PhysicalEngine.dir/src/glad.c.obj CMakeFiles/PhysicalEngine.dir/main.cpp.obj | E$:/PhysicalEngine/lib/glfw3.dll E$:/PhysicalEngine/lib/libglfw3.a E$:/PhysicalEngine/lib/libglfw3dll.a
   FLAGS = -g
-  LINK_LIBRARIES = E:/PhysicalEngine/lib/glfw3.dll  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = E:/PhysicalEngine/lib/glfw3.dll  E:/PhysicalEngine/lib/libglfw3.a  E:/PhysicalEngine/lib/libglfw3dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LE:/PhysicalEngine/lib
   OBJECT_DIR = CMakeFiles\PhysicalEngine.dir
   POST_BUILD = cd .
